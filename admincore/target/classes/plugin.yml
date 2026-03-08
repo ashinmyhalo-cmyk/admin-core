@@ -1,0 +1,24 @@
+name: GothCraftAdmin
+version: 1.0
+main: me.rbus.admincore.Main
+api-version: 1.20
+author: Yung Archangel
+
+commands:
+  admin:
+    description: Admin-only commands
+    usage: /admin <kick|fly> [player]
+  owner:
+    description: Owner-only commands
+    usage: /owner <broadcast|op> [player]
+  player:
+    description: Player commands
+    usage: /player <spawn|heal>
+
+permissions:
+  gothcraft.admin:
+    description: Allows using admin commands
+    default: op
+  gothcraft.owner:
+    description: Allows using owner commands
+    default: op
